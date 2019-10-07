@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<form>
+			First name:<br />
+			<input type="text" name="firstname">
+			<br />
+			Last name:<br />
+			<input type="text" name="lastname">
+		</form>
+		<hr >
+		<form>
+			<input type="radio" name="sex" value="male" checked>Male
+			<br />
+			<input type="radio" name="sex" value="female">Female
+		</form>
+		<hr />
+		<form action="action_page.php">
+			First name:<br />
+			<input type="text" name="firstname" value="Mickey">
+			<br />
+			Last name:<br />
+			<input type="text" name="lastname" value="Mouse">
+			<br /><br />
+			<input type="submit" value="Submit">
+		</form>
+		<hr />
+		<form action="action_page.php">
+			Firstname:<br />
+			<input type="text" value="Mickey">
+			<br>
+			Lastname:<br />
+			<input type="text" name="lastname" value="Mouse">
+			<br /><br />
+			<input type="submit" value="Submit">
+		</form>
+		
+		**************************************************<br />
+		<form action="action_page.php">
+			<fieldset>
+				<legend>Personal information:</legend>
+				Firstname:<br />
+				<input type="text" name="firstname" value="Mickey">
+				<br />
+				Last name:<br>
+				<input type="text" name="lastname" value="Mouse">
+				<br /><br />
+				<input type="submit" value="Submit">
+			</fieldset>
+		</form>
+		<hr >
+		<form action="action_page.php" method="GET" target="_blank" accept-charset="UTF-8"
+		ectype="application/x-www-form-urlencoded" autocomplete="off" novalidate>
+		
+	</body>
+</html>

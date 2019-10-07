@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<div id="result"></div>
+		
+		<script>
+			//check browser support
+			if(typeof(Storage)!=="undefined"){
+				//Store
+				localStorage.setItem("lastname","Gates");
+				//retrieve
+				document.getElementById("result").innerHTML=
+				localStorage.getItem("lastname");
+			}else{
+				document.getElementById("result").innerHTML="抱歉！您的
+				浏览器不支持 web storage...";
+			}
+		</script>
+	</body>
+</html>

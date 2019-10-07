@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<h1>绝不要把字符串创建为对象</h1>
+		<p>javascript 对象无法比较。</p>
+		<p id="demo"></p>
+		<script>
+			var x="bill";
+			var y=new String("bill");
+			document.getElementById("demo").innerHTML=(x===y);
+		</script>
+	</body>
+</html>
